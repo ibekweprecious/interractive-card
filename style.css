@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-feature-settings: "clig" off, "liga" off;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  color: hsl(216, 12%, 54%);
+  background-color: hsl(216, 12%, 8%);
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.interactive-rating-card,
+.thank-you-card {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: hsl(213, 19%, 18%);
+  margin-bottom: 32px;
+  border-radius: 30px;
+  padding: 32px;
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    hsl(215, 20%, 17%) 0%,
+    hsl(216, 24%, 12%) 100%
+  );
+}
+
+.interactive-rating-card h1,
+.thank-you-card h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 7px;
+}
+
+.interactive-rating-card p,
+.thank-you-card p {
+  margin-bottom: 24px;
+}
+
+.interactive-rating-card__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+  background-color: hsl(213, 19%, 18%);
+  margin-bottom: 48px;
+}
+
+.interactive-rating-card__rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 21px;
+  margin-bottom: 32px;
+}
+
+.interactive-rating-card__rating div {
+  font-weight: 700;
+  line-height: 16px;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 51px;
+  height: 51px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.interactive-rating-card__rating div:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.interactive-rating-card__rating div.active {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+
+.interactive-rating-card button {
+  width: 100%;
+  font: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 100px;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.interactive-rating-card button:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+/*
+ ================= Thank You Styles ================
+*/
+
+.thank-you-card {
+  padding-top: 64px;
+  text-align: center;
+}
+
+.thank-you-card__icon {
+  width: 162px;
+  height: 108px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.thank-you-card__rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 193px;
+  height: 32px;
+  margin: 0 auto;
+  border-radius: 100px;
+  background: hsl(213, 19%, 18%);
+  margin-bottom: 32px;
+}
+
+.thank-you-card__rating span {
+  color: hsl(25, 97%, 53%);
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.attribution {
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 500px) {
+  .interactive-rating-card {
+    padding: 24px;
+  }
+
+  .interactive-rating-card__rating {
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: flex-start;
+  }
+
+  .interactive-rating-card__rating div {
+    width: 44px;
+    height: 44px;
+  }
+}

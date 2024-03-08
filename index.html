@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon_io/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <title>Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="interactive-rating-card">
+        <div class="interactive-rating-card__icon">
+          <img src="images/icon-star.svg" alt="Star icon" />
+        </div>
+
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <div class="interactive-rating-card__rating">
+          <div data-rating="1" class="circle"><span>1</span></div>
+          <div data-rating="2" class="circle"><span>2</span></div>
+          <div data-rating="3" class="circle"><span>3</span></div>
+          <div data-rating="4" class="circle"><span>4</span></div>
+          <div data-rating="5" class="circle"><span>5</span></div>
+        </div>
+
+        <button>Submit</button>
+      </div>
+
+      <div class="thank-you-card hidden">
+        <div class="thank-you-card__icon">
+          <img
+            src="./images/illustration-thank-you.svg"
+            alt="Thank you illustration"
+          />
+        </div>
+
+        <div class="thank-you-card__rating">
+          <span id="selected">You selected 4 out of 5</span>
+        </div>
+
+        <h1>Thank you!</h1>
+
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a target="_blank" href="https://x.com/iamwhitegod">Whitegod Kingsley</a
+        >.
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
